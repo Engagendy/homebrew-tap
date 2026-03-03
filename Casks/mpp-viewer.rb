@@ -11,12 +11,12 @@ cask "mpp-viewer" do
 
   depends_on macos: ">= :sonoma"
 
-  app "MPP Viewer.app"
+  app "MPPViewer.app"
 
   postflight do
     # Remove quarantine attribute so the unsigned app can launch
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/MPP Viewer.app"],
+                   args: ["-cr", "#{appdir}/MPPViewer.app"],
                    sudo: false
   end
 
