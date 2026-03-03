@@ -14,10 +14,11 @@ cask "mpp-viewer" do
   app "MPPViewer.app"
 
   postflight do
-    # Remove quarantine attribute so the unsigned app can launch
+    # Remove quarantine attributes recursively so the unsigned app
+    # and its bundled JRE can launch without Gatekeeper blocking
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/MPPViewer.app"],
-                   sudo: false
+                   sudo: true
   end
 
   zap trash: [
