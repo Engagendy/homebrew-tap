@@ -1,8 +1,8 @@
 cask "mclean" do
-  version "1.0.4"
-  sha256 "bf835dbb6ced22c9472955434a812ecc0aa5954173bec6dfb7a853437cbcf3c1"
+  version "1.0.5"
+  sha256 "ad16e3d73de091b17bb831d6d7a5c5a50c644744323d33e245f21621f80662dc"
 
-  url "https://github.com/Engagendy/mclean/releases/download/v1.0.4/MClean-#{version}-arm64.dmg",
+  url "https://github.com/Engagendy/mclean/releases/download/v1.0.5/MClean-#{version}-arm64.dmg",
       verified: "github.com/Engagendy/mclean/"
 
   name "MClean"
