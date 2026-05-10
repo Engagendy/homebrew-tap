@@ -1,21 +1,21 @@
 cask "mclean" do
-  version "1.0.6"
-  sha256 "151e01413f95ce6dc19b59a454325be76635b72403bea0169b646257f1b2e32c"
+  version "1.0.9"
+  sha256 "822777fe85a24fcf7ab2ca8e5c7bf6d5ff1ec811414406b38a9ee55f88c7bf50"
 
-  url "https://github.com/Engagendy/mclean/releases/download/v1.0.6/MClean-#{version}-arm64.dmg",
+  url "https://github.com/Engagendy/mclean/releases/download/v1.0.9/theMClean-#{version}-arm64.dmg",
       verified: "github.com/Engagendy/mclean/"
 
-  name "MClean"
+  name "theMClean"
   desc "Native macOS cleanup scanner for cache, temporary, old, and large files"
   homepage "https://github.com/Engagendy/mclean"
 
   depends_on macos: ">= :sonoma"
 
-  app "MClean.app"
+  app "theMClean.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/MClean.app"],
+                   args: ["-cr", "#{appdir}/theMClean.app"],
                    sudo: false
   end
 
