@@ -1,8 +1,8 @@
 cask "mpp-viewer" do
-  version "2.2.22"
-  sha256 "aeeb5dcbd151430a9f6ec39a25591fe6737250551b3c63cd5c70dd2b117193be"
+  version "2.3.0"
+  sha256 "c3cca621e63f723ed3a2da37c7e5d9347783d7c920b7a9ed1d798d68d5b5f413"
 
-  url "https://github.com/Engagendy/MPPViewerMacOS/releases/download/v2.2.22/MPPViewer-#{version}-arm64.dmg",
+  url "https://github.com/Engagendy/MPPViewerMacOS/releases/download/v2.3.0/MPPViewer-#{version}-arm64.dmg",
       verified: "github.com/Engagendy/MPPViewerMacOS/"
 
   name "MPP Viewer"
