@@ -5,19 +5,19 @@ cask "mpp-viewer" do
   url "https://github.com/Engagendy/MPPViewerMacOS/releases/download/v2.8.1/MPPViewer-#{version}-arm64.dmg",
       verified: "github.com/Engagendy/MPPViewerMacOS/"
 
-  name "MPP Viewer"
+  name "Planroom"
   desc "Native macOS viewer for Microsoft Project (.mpp) files"
   homepage "https://github.com/Engagendy/MPPViewerMacOS"
 
   depends_on macos: ">= :sonoma"
 
-  app "MPPViewer.app"
+  app "Planroom.app"
 
   postflight do
     # Remove quarantine attributes recursively so the unsigned app
     # and its bundled JRE can launch without Gatekeeper blocking
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/MPPViewer.app"],
+                   args: ["-cr", "#{appdir}/Planroom.app"],
                    sudo: true
   end
 
